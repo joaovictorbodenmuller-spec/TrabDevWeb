@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background: #1a1033;
+  color: #e8e8f0;
+}
+
+h2 {
+  font-size: 30px;
+  color: #ff9f1c;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  overflow: hidden;
+  background: #120a26;
+  padding: 15px 40px;
+  border-bottom: 3px solid #ff9f1c;
+}
+
+#logo {
+  float: left;
+  margin: 0;
+  font-size: 30px;
+  color: white;
+}
+
+#logo span {
+  color: #ff9f1c;
+}
+
+nav {
+  float: right;
+  padding-top: 8px;
+}
+
+a {
+  color: #ff9f1c;
+}
+
+nav a {
+  color: #e8e8f0;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+a:hover {
+  color: #ffd54f;
+  text-decoration: underline;
+}
+
+a:active {
+  color: brown;
+}
+
+#banner {
+  text-align: center;
+  padding: 60px 20px;
+  background: #3a1c71;
+}
+
+#banner h2 {
+  font-size: 40px;
+  color: white;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+#produtos {
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  width: 22%;
+  vertical-align: top;
+  background: #2a1b4d;
+  margin: 0 1.1% 20px 1.1%;
+  padding: 30px 20px;
+  border: 2px solid #4a3580;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  font-size: 16px;
+  height: 50px;
+}
+
+.selo {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+}
+
+.preco {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff9f1c;
+}
+
+button {
+  background: #ff9f1c;
+  color: #1a1033;
+  border: none;
+  padding: 10px 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #4a3580;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #34225e;
+  color: #ff9f1c;
+}
+
+#sobre {
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+#sobre img {
+  float: left;
+  width: 300px;
+  margin-right: 25px;
+  border: 3px solid #ff9f1c;
+}
+
+#lista-carrinho li {
+  background: #2a1b4d;
+  border: 1px solid #4a3580;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+#lista-carrinho button {
+  background: red;
+  color: white;
+  margin-left: 10px;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px 0;
+  border: 2px solid #4a3580;
+  background: #120a26;
+  color: white;
+}
+
+#campo-cupom {
+  display: inline-block;
+  width: 250px;
+  margin-bottom: 0;
+}
+
+#resumo {
+  background: #2a1b4d;
+  border: 2px solid #ff9f1c;
+  padding: 20px;
+  text-align: right;
+}
+
+#total {
+  color: #ffd54f;
+  font-size: 24px;
+}
+
+#contato {
+  margin-top: 40px;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  background: #120a26;
+  border-top: 3px solid #ff9f1c;
+  padding: 20px;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>BSB Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="topo">
+    <h1 id="logo">BSB <span>Store</span></h1>
+    <nav>
+      <a href="#produtos">Produtos</a>
+      <a href="#comparativo">Comparativo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#carrinho">Carrinho (<span id="contador">0</span>)</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div id="banner">
+    <h2>Monte o setup dos seus sonhos</h2>
+    <p>Teclados, cadeiras, monitores e placas de vídeo com os melhores preços.</p>
+    <p>Use o cupom <b>BSB10</b> ou <b>GAMER15</b> no carrinho!</p>
+  </div>
+
+  <div class="container">
+
+    <div id="produtos">
+      <h2>Nossos Produtos</h2>
+
+      <div class="card">
+        <span class="selo">NOVO</span>
+        <img src="teclado-logitech.jpg" onerror="this.onerror=null;this.src='teclado.svg'">
+        <h3>Teclado Logitech G316 X 98</h3>
+        <p class="preco">R$ 499,90</p>
+        <button onclick="adicionar(0)">Adicionar ao carrinho</button>
+      </div>
+
+      <div class="card">
+        <span class="selo">-10%</span>
+        <img src="cadeira-dt3.jpg" onerror="this.onerror=null;this.src='cadeira.svg'">
+        <h3>Cadeira Gamer DT3 Sports</h3>
+        <p class="preco">R$ 1.499,90</p>
+        <button onclick="adicionar(1)">Adicionar ao carrinho</button>
+      </div>
+
+      <div class="card">
+        <span class="selo">TOP</span>
+        <img src="monitor-asus.jpg" onerror="this.onerror=null;this.src='monitor.svg'">
+        <h3>Monitor Gamer ASUS ROG Swift OLED 27"</h3>
+        <p class="preco">R$ 4.999,90</p>
+        <button onclick="adicionar(2)">Adicionar ao carrinho</button>
+      </div>
+
+      <div class="card">
+        <span class="selo">HOT</span>
+        <img src="https://static.gigabyte.com/StaticFile/Image/Global/e7fb2772ccda002c0bf67fd9599ec065/ProductRemoveBg/44960" onerror="this.onerror=null;this.src='placa-video.svg'">
+        <h3>Placa de Vídeo Gigabyte RTX 5060 8GB</h3>
+        <p class="preco">R$ 2.499,90</p>
+        <button onclick="adicionar(3)">Adicionar ao carrinho</button>
+      </div>
+    </div>
+
+    <div id="comparativo">
+      <h2>Comparativo</h2>
+      <table>
+        <tr>
+          <th>Produto</th>
+          <th>Destaque</th>
+          <th>Garantia</th>
+        </tr>
+        <tr>
+          <td>Teclado Logitech G316 X 98</td>
+          <td>Switches hot-swappable</td>
+          <td>12 meses</td>
+        </tr>
+        <tr>
+          <td>Cadeira Gamer DT3 Sports</td>
+          <td>Reclinável até 180°</td>
+          <td>12 meses</td>
+        </tr>
+        <tr>
+          <td>Monitor Gamer ASUS ROG Swift OLED 27"</td>
+          <td>Painel OLED QHD de até 540Hz</td>
+          <td>24 meses</td>
+        </tr>
+        <tr>
+          <td>Placa de Vídeo Gigabyte RTX 5060 8GB</td>
+          <td>8GB de memória e DLSS 4</td>
+          <td>36 meses</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="sobre">
+      <h2>Por que comprar na BSB Store?</h2>
+      <img src="placa-video.svg">
+      <p>A BSB Store entrega o que há de melhor em tecnologia gamer, com atendimento rápido e preço justo.</p>
+      <ul>
+        <li>Frete grátis em compras acima de R$ 1.000,00</li>
+        <li>Parcelamento em até 12x</li>
+        <li>Garantia em todos os produtos</li>
+        <li>Suporte especializado</li>
+      </ul>
+    </div>
+
+    <div id="carrinho">
+      <h2>Seu Carrinho</h2>
+      <ul id="lista-carrinho"></ul>
+
+      <input type="text" id="campo-cupom" placeholder="Digite seu cupom">
+      <button onclick="aplicarCupom()">Aplicar cupom</button>
+      <p id="msg-cupom"></p>
+
+      <div id="resumo">
+        <p>Subtotal: <span id="subtotal">R$ 0,00</span></p>
+        <p>Desconto: <span id="desconto">R$ 0,00</span></p>
+        <p>Frete: <span id="frete">R$ 0,00</span></p>
+        <h3>Total: <span id="total">R$ 0,00</span></h3>
+        <button onclick="comprar()">Finalizar Compra</button>
+      </div>
+      <p id="msg-compra"></p>
+    </div>
+
+    <div id="contato">
+      <h2>Fale Conosco</h2>
+      <form>
+        <label>Nome:</label>
+        <input type="text" id="nome">
+        <label>E-mail:</label>
+        <input type="email" id="email">
+        <label>Mensagem:</label>
+        <textarea id="mensagem" rows="4"></textarea>
+        <button type="button" onclick="enviar()">Enviar</button>
+        <p id="msg-form"></p>
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>BSB Store - 2026</p>
+    <a href="#topo">Voltar ao topo</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
